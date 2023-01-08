@@ -1,0 +1,73 @@
+<!-- HTML for Colorize -->
+
+<html>
+    <head>
+        <script src="background.js"></script>
+        <link rel="stylesheet" href="popup.css">
+    </head>
+    <body>
+        <div class="container">
+            <img id="info"src="download.png">
+            <img class="logo"src="Colorize Logo Face Shadow.png">
+            <h1 id="title"style="display: inline-block;">
+                Colorize
+            </h1>
+
+            <div class="line">
+
+            </div>
+            
+            <form>
+                <div class = "normalRadio"style="display: inline">
+                    <input type="radio" name="color" id="normalButton">
+                    <div class="buttontext">
+                        Normal
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+
+                <div class = "proRadio"style="display: inline">
+                    <input type="radio" name="color" id="proButton">
+                    <div class="buttontext">
+                        Protanopia
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <div class = "deuRadio"style="display: inline">
+                    <input type="radio" name="color" id="deuButton">
+                    <div class="buttontext">
+                        Deuteranopia
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class = "triRadio"style="display: inline">
+                    <input type="radio" name="color" id="triButton">
+                    <div class="buttontext">
+                        Tritanopia
+                    </div>
+                </div>
+               
+                
+                
+            </form>
+            <div class="sliderTextContainer">
+                <span style="font-family: Billie DEMO">Saturation: </span><span id="sliderText"></span><span style="font-family: made tommy">%</span>
+            </div>
+            
+            <div class="satSliderContainer">
+                <input type="range" min="100" max="500" value="100"name="color" id="satSlider">
+            </div>
+            
+        </div>
+        
+        
+        <script src="popup.js"></script>
+        
+    </body>
+    
+</html>

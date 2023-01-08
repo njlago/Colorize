@@ -1,0 +1,249 @@
+/* CSS for Colorize */
+
+body {
+    accent-color: #ffc100;
+    outline: 2px solid #d3d3d3;
+    outline-offset: 6px;
+    margin-bottom: 0px;
+}
+
+.container {
+    width: 175px;
+    height: 230px;
+}
+
+#info {
+    transition: .2s;
+    opacity: 60%;
+    position: absolute;
+    width: 12px;
+    height: auto;
+    top: 7px;
+    right: 7px;
+}
+
+#info:hover {
+    opacity: 100%;
+}
+
+.logo {
+    animation: logo;
+    animation-duration: 1s;
+    position: relative;
+    margin-left: 17px;
+    margin-right: 4px;
+    margin-top: 0px;
+    margin-bottom: -6px;
+    width: 22%; 
+    height: auto; 
+    display: inline-block;
+}
+
+#title {
+    letter-spacing: 1;
+    animation: title;
+    animation-duration: 1s;
+    position: relative;
+    margin-bottom: 30px;
+    top: -1px;
+    text-align: center;
+    font-family: made tommy;
+    font-size: 22;
+}
+
+.line {
+    z-index: 10;
+    position: relative;
+    width: 156px;
+    height: 18px;
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -78px;
+    margin-bottom: 2px;
+    border-top: 2px solid #d3d3d3;
+    background-color: white;
+   
+}
+
+input[type=radio]{
+    transition: .45s;
+    display: inline-block;
+    appearance: none;
+    background: none;
+    margin-left: 8px;
+    margin-right: -3px;
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+    border-radius: 50%;
+    outline: 2px solid #d3d3d3;
+    outline-offset: 0px;
+}
+
+input[type=radio]:hover{
+    transition: .45s;
+    outline: 2px solid #6a6a6a
+}
+
+.normalRadio input:checked {
+    background: linear-gradient(135deg, rgb(255, 149, 0), #ffdd00);
+    outline: 2px solid #6a6a6a;
+    animation-timing-function: ease-out;
+    animation-name: change-size;
+    animation-duration: 0.8s;
+}
+
+.proRadio input:checked {
+    background: linear-gradient(135deg, rgb(219, 0, 0), rgb(255, 158, 158));
+    outline: 2px solid #6a6a6a;
+    animation-timing-function: ease-out;
+    animation-name: change-size;
+    animation-duration: 0.8s;
+}
+
+.deuRadio input:checked {
+    background: linear-gradient(135deg, rgb(0, 164, 0), rgb(58, 255, 114));
+    outline: 2px solid #6a6a6a;
+    animation-timing-function: ease-out;
+    animation-name: change-size;
+    animation-duration: 0.8s;
+}
+
+.triRadio input:checked {
+    background: linear-gradient(135deg, rgb(0, 46, 229), rgb(149, 186, 255));
+    outline: 2px solid #6a6a6a;
+    animation-timing-function: ease-out;
+    animation-name: change-size;
+    animation-duration: 0.8s;
+}
+
+.buttontext {
+    font-family: Billie DEMO;
+    position: relative;
+    font-size: 17; 
+    display: inline-block; 
+    padding-left: 10px;
+    bottom: 6px;
+
+}
+
+.sliderTextContainer {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 4px;
+}
+
+.slider {
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+#satSlider {
+    appearance: none;
+    width: 160px;
+    height: 8px;
+    background: rgb(223, 223, 223);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition:  .2s;
+    border-radius: 5px;
+}
+
+.satSliderContainer {
+    position: relative;
+    left: 50%;
+    margin-left: -82px;
+    padding-bottom: 15px;
+}
+
+#satSlider:hover {
+    opacity: 100%;
+}
+
+#satSlider::-webkit-slider-thumb {
+    transition: .3s;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffc100;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#satSlider::-webkit-slider-thumb:hover {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #ffc100;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+#satSlider.slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: #ffc100;
+    cursor: pointer;
+}
+
+#satSlider.slider::-moz-range-thumb:hover {
+    width: 18px;
+    height: 18px;
+    background: #ffc100;
+    cursor: pointer;
+}
+
+#sliderText {
+    font-family: made tommy;
+}
+
+@keyframes change-size {
+    0% {
+        outline-offset: 0px;  
+        /* outline: 2px solid #d3d3d3; */
+    }
+    40% {
+        outline-offset: 3px;
+    }
+
+    60% {
+        outline: 2px solid #6a6a6a;
+    }
+    100% {
+        outline-offset: 0px;
+        outline: 2px solid #6a6a6a;
+    }
+}
+
+@keyframes logo {
+    0%{
+        opacity: 0%;
+        margin-bottom: -36px;
+    }
+
+    100% {
+        opacity: 100%;
+        margin-bottom: -6px;
+    }
+}
+
+@keyframes title {
+    0%{
+        opacity: 0%;
+        top: 27px;
+    }
+
+    100% {
+        opacity: 100%;
+        top: -1px;
+    }
+}
